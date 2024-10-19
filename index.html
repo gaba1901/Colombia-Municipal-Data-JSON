@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipios de Colombia</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Municipios de Colombia</h1>
+
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="filterRegion">Filtrar por Región:</label>
+                    <input type="text" class="form-control" id="filterRegion" placeholder="Escribe la región">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="filterDaneDept">Filtrar por Código DANE del Departamento:</label>
+                    <input type="number" class="form-control" id="filterDaneDept" placeholder="Código DANE del Departamento">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="filterDept">Filtrar por Departamento:</label>
+                    <input type="text" class="form-control" id="filterDept" placeholder="Escribe el departamento">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="filterDaneMuni">Filtrar por Código DANE del Municipio:</label>
+                    <input type="number" class="form-control" id="filterDaneMuni" placeholder="Código DANE del Municipio">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="filterMuni">Filtrar por Municipio:</label>
+                    <input type="text" class="form-control" id="filterMuni" placeholder="Escribe el municipio">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <button class="btn btn-primary" id="loadDefault">Cargar Datos Predeterminados</button>
+                <input type="file" class="form-control-file mt-2" id="fileInput" accept=".json">
+                <button class="btn btn-success mt-2" id="uploadButton">Subir Archivo JSON</button>
+            </div>
+        </div>
+
+        <table class="table table-bordered" id="municipiosTable">
+            <thead class="thead-light">
+                <tr>
+                    <th>REGIÓN</th>
+                    <th>CÓDIGO DANE DEL DEPARTAMENTO</th>
+                    <th>DEPARTAMENTO</th>
+                    <th>CÓDIGO DANE DEL MUNICIPIO</th>
+                    <th>MUNICIPIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se generarán dinámicamente aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Incluir Bootstrap JS y dependencias (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

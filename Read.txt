@@ -1,0 +1,35 @@
+English
+How It Works
+
+- Filters: You can search for municipalities by typing in the filters for region, DANE code, and name.
+- Buttons:
+  - Load Data: This button automatically loads the data from the JSON file.
+  - Upload File: With this button, you can upload your own JSON file from your computer.
+
+- Table: The information is displayed in a table that fills with the data you choose.
+
+Interaction
+
+- Clicking on Load Data shows you the information immediately.
+- Using Upload File allows you to see different data that you select.
+- The filters let you quickly find what you’re looking for.
+
+Spanish
+Cómo Funciona
+
+Filtros: Puedes buscar municipios escribiendo en los filtros por región, código DANE y nombre.
+-Botones:
+  - Cargar Datos: Este botón carga automáticamente los datos del archivo JSON.
+  - Subir Archivo: Con este botón, puedes cargar tu propio archivo JSON desde tu computadora.
+
+-Tabla: La información se muestra en una tabla que se llena con los datos que elijas.
+
+Interacción
+- Al hacer clic en Cargar Datos, ves la información de inmediato.
+- Al usar Subir Archivo, puedes ver datos diferentes que tú elijas.
+- Los filtros te permiten encontrar lo que buscas rápidamente.
+
+Conclusión
+
+La aplicación es fácil de usar y te ayuda a ver información sobre los municipios de Colombia. Puedes cargar datos automáticamente o desde un archivo y filtrarlos a tu manera.
+
